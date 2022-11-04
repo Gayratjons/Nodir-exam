@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+.content-wrapper {
+    width: 100%;
+    padding-top: 100px;
+}
+.navbar {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background-color: rgb(9, 228, 9);
+    animation-name: tushish;
+    animation-duration: 0.7s;
+    animation-delay: 0.3s;
+    transition: ease-out 0.5s;
+    margin-top: -100px;
+    animation-fill-mode: forwards;
+}
+@keyframes tushish {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100px);
+    }
+}
+.navbar-box {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    cursor: pointer;
+    font-size: 58px;
+    color: rgb(255, 32, 32);
+    font-weight: 700;
+    text-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+}
+.form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+    height: 340px;
+    background-color: rgb(9, 228, 9);
+    border: 0;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 100px auto;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+    transition: all 0.6s;
+    position: relative;
+}
+.form-login label {
+    color: white;
+    font-size: 34px;
+    font-weight: 500;
+    text-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
+}
+.input {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    outline: none;
+    border: 0;
+    padding: 15px;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+.input-login-btn {
+    margin: 30px auto 0;
+    width: 140px;
+    height: 50px;
+    border: 0px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(4, 64, 1);
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+}
